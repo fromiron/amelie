@@ -1,0 +1,108 @@
+#dateForm{
+  width: 100%;
+  padding: 5px 20px;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.reserve__selectWrapper{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+#hour, #minute, #person{
+  width: 30%;
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+
+
+}
+
+.reserveCourse.selected{
+  box-sizing: border-box;
+  margin: 5px 0;
+  transition: all 1s;
+  background-color: var(--am-color-gray);
+}
+
+
+.reserve__submit{
+  margin-top: 10px;
+  width: 100%;
+    border-radius: 4px;
+padding: 4px;
+  background-color: var(--am-color2);
+  color: white;
+}
+
+.capacity4,
+.capacity6{
+  width: 80%;
+  padding: 5px;
+  margin: 5px;
+    border-radius: 4px;
+color: white;
+
+}
+
+
+.capacity4{
+  background-color: var(--am-color2);
+}
+
+.capacity6{
+  background-color: var(--am-color3);
+}
+
+.capacity4:hover,
+.capacity6:hover{
+  background-color: var(--am-color-pink);
+}
+
+
+
+.reserve__title{
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: rgba(255,255,255,01);
+  color:var(--am-color2);
+    border-radius: 4px;
+padding: 4px;
+  text-align: center;
+ font-weight: 600;
+}
+
+#table__list{
+  background-color: rgba(255,255,255,0.3);;
+  margin: 10px 0;
+      border-radius: 4px;
+
+}
+
+a.reserve__submit{
+  display: block;
+  height: auto;
+  background-color: var(--am-color-gray);
+  text-align: center;
+
+  margin-top:20px;
+}
+
+
+.userInsertCompletion_result__id.reserve {
+  font-size: 20px;
+}
+
+.userInsertCompletion__wrapper a{
+      border-radius: 4px;
+
+  margin-top: 10px;
+  display: block;
+  background-color: var(--am-color2);
+  padding:5px;
+  color: var(--am-color2);
+}

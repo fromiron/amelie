@@ -1,0 +1,63 @@
+*, body {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 0;
+	outline: 0;
+	font-family: 'Noto Serif JP', serif;
+}
+
+.userInsertCompletion_contents {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.userInsertCompletion_result__title {
+	font-size: 25px;
+	margin: 25px 0;
+}
+
+.userInsertCompletion_result__text {
+	font-size: 18px;
+	line-height: 25px;
+}
+.userInsertCompletion_result__id{
+	   box-sizing: border-box;
+	font-size:30px;
+	width: 100%;
+	background-color: var(--am-color-pink);
+	color:white;
+	padding:10px 0;
+	margin:10px 0;
+    border-radius: 5px;
+
+}
+
+.userInsertCompletion__wrapper {
+	margin-top: 40px;
+	width: 70%;
+	max-width: 500px;
+	min-height: 300px;
+	background-color: var(--am-color1);
+	border-radius: 5px;
+	color: white;
+	padding: 5%;
+	box-sizing: border-box;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px
+		rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px
+		17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0
+		100px 80px rgba(0, 0, 0, 0.12);
+	display: flex;
+	text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+	.userInsertCompletion__wrapper {
+		margin: 0;
+		padding: 5%;
+		width: 100%;
+		height: 100%;
+		border-radius: 0px;
+	}
+}

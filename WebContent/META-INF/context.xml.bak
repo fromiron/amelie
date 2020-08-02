@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/jsp"
+    reloadable="true"
+    docBase="C:\J01_pleiades\workspace\amelie"
+    workDir="C:\J01_pleiades\workspace\amelie\work"
+    debug="5"
+    crossContext="true">
+  <Resource name="mysql" auth="Container" type="javax.sql.DataSource"
+      password="root" driverClassName="org.mariadb.jdbc.Driver"
+      url="jdbc:mysql://localhost:3306/test" maxActive="100" maxWait="10000" maxIdle="30" username="root"></Resource>
+</Context>

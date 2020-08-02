@@ -1,0 +1,135 @@
+.home_contents {
+    width: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.home__msg_box {
+    width: 70%;
+    min-height: 500px;
+    background-color: var(--am-color-dark);
+    border-radius: 5px;
+    color: white;
+    padding: 5%;
+    box-sizing: border-box;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+
+}
+
+.home_msg_box__top {
+    margin: 0.7em 0;
+}
+
+.home_msg_box__top.title {
+    font-size: 50px;
+}
+
+.home_msg_box__top.sub_title{
+	line-height: 2em;}
+
+.home_msg_box__btn__btn {
+    text-align: center;
+    padding: 2em 1em;
+    border-radius: 5px;
+    min-width: 200px;
+
+}
+
+.home_msg_box__bottom {
+    display: flex;
+}
+
+
+.home_msg_box__btn__btn:nth-child(1) {
+    background-color: var(--am-color-pink);
+    margin-top: 5em;
+    transition: all 0.5s ease;
+}
+.home_msg_box__btn__btn:nth-child(1):hover{
+    background-color: var(--am-color3);
+
+}
+.home_msg_box__bottom__img__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5%;
+}
+
+.home_msg_box__bottom__img {
+    background-image: url("../image/home_img1.png");
+    width: 100%;
+    min-width: 200px;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+@media screen and (max-width: 768px) {
+
+    .home_msg_box__bottom__img__wrapper {
+        display: none;
+
+    }
+
+    .home_contents {
+        padding: 1%;
+    }
+
+    .home__msg_box {
+        width: 90%;
+        margin-top:2em;
+    }
+
+    .home_msg_box__bottom__btn__wrapper {
+        width: 100%;
+    }
+
+    .home_msg_box__btn__btn:nth-child(1) {
+        background-color: var(--am-color-pink);
+        margin-top: 2em;
+    }
+}
+
+
+#home__bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -9;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+}
+
+.home__bg_cover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -8;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+}
+.home__msg_box.disable{
+    animation: msgClose 1s linear forwards;
+}
+@keyframes msgClose {
+	0% {
+		opacity: 100;
+	}
+
+	100% {
+        opacity: 0;
+	}
+}
