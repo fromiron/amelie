@@ -4,10 +4,7 @@ function fillWhite(){
 	for(i=0; i<otherTarget.length; i++){
 		otherTarget[i].classList.remove("selected");
 	}
-
 }
-
-
 
 window.onload = function() {
 
@@ -24,13 +21,6 @@ for(i =0; i<reserveCourse.length;i++){
 	    parent = e.currentTarget;
 
         parent.classList.add("selected");
-		console.log(parent);
-		console.log(parent.firstElementChild.innerText);
-		console.log(parent.firstElementChild.nextElementSibling.innerText);
-
-		console.log("course "+parent.firstElementChild.nextElementSibling.textContent);
-		console.log("courseId is "+parent.firstElementChild.innerText);
-
 		courseName.value=parent.firstElementChild.nextElementSibling.textContent;
 		courseId.value=parent.firstElementChild.innerText;
 
